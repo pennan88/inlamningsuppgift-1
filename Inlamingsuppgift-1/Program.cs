@@ -24,8 +24,7 @@ namespace Inlamingsuppgift_1
             numberTwo = Convert.ToDouble(Console.ReadLine());
 
 
-            Console.WriteLine("Type your thrid number");
-            numberThree = Convert.ToDouble(Console.ReadLine());
+          
 
             Console.WriteLine("\t+  Add");
             Console.WriteLine("\t-  Subtract");
@@ -37,19 +36,19 @@ namespace Inlamingsuppgift_1
             {
 
                 case "+":
-                    Console.WriteLine($"Your result: {numberOne} + {numberTwo} + {numberThree} = " + (numberOne + numberTwo + numberThree));
+                    Console.WriteLine($"Your result: {numberOne} + {numberTwo} = " + (numberOne + numberTwo ));
                     break;
 
                 case "-":
-                    Console.WriteLine($"Your result: {numberOne} - {numberTwo} - {numberThree} = " + (numberOne - numberTwo - numberThree));
+                    Console.WriteLine($"Your result: {numberOne} - {numberTwo}  = " + (numberOne - numberTwo ));
                     break;
 
                 case "*":
-                    Console.WriteLine($"Your result: {numberOne} * {numberTwo} * {numberThree} = " + (numberOne * numberTwo * numberThree));
+                    Console.WriteLine($"Your result: {numberOne} * {numberTwo} = " + (numberOne * numberTwo ));
                     break;
 
                 case "/":
-                    Console.WriteLine($"Your result: {numberOne} / {numberTwo} / {numberThree} = " + (numberOne / numberTwo / numberThree));
+                    Console.WriteLine($"Your result: {numberOne} / {numberTwo} = " + (numberOne / numberTwo ));
                     break;
 
 
