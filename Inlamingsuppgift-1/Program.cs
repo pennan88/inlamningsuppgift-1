@@ -12,7 +12,7 @@ namespace Inlamingsuppgift_1
             
             double numberOne = 0;
             double numberTwo = 0;
-            double numberThree = 0;
+            
 
             Console.WriteLine("Test calculator\r");
             Console.WriteLine("------------------------------\n");
