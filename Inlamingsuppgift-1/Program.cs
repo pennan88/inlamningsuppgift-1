@@ -7,6 +7,8 @@ namespace Inlamingsuppgift_1
     {
         static void Main()
         {
+
+             
             Console.BackgroundColor = ConsoleColor.Gray;
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Black;
@@ -33,7 +35,7 @@ namespace Inlamingsuppgift_1
 
             else if (op == "*")
             {
-                Console.WriteLine($"Your answer is [{num1}] * {num2} = " + (num1 * num2));
+                Console.WriteLine($"Your answer is {num1} * {num2} = " + (num1 * num2));
             }
 
             else if (op == "/")
@@ -47,10 +49,6 @@ namespace Inlamingsuppgift_1
             }
             Console.WriteLine("Press any key to quit: ");
             Console.ReadKey();
-
-           
-
-
 
 
 
