@@ -7,6 +7,9 @@ namespace Inlamingsuppgift_1
     {
         static void Main()
         {
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
 
             Console.Write("Enter your first number! ");
             double num1 = Convert.ToDouble(Console.ReadLine());
@@ -30,7 +33,7 @@ namespace Inlamingsuppgift_1
 
             else if (op == "*")
             {
-                Console.WriteLine($"Your answer is {num1} * {num2} = " + (num1 * num2));
+                Console.WriteLine($"Your answer is [{num1}] * {num2} = " + (num1 * num2));
             }
 
             else if (op == "/")
