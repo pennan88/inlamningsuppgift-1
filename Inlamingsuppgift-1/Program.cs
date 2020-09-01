@@ -8,57 +8,44 @@ namespace Inlamingsuppgift_1
         static void Main()
         {
 
+            Console.Write("Enter your first number! ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
-            
-            double numberOne = 0;
-            double numberTwo = 0;
-            
+            Console.Write("Enter your Operator! ");
+            string op = Console.ReadLine();
 
-            Console.WriteLine("Test calculator\r");
-            Console.WriteLine("------------------------------\n");
-
-            Console.WriteLine("Type your first number");
-            numberOne = Convert.ToDouble(Console.ReadLine());
-                
-            Console.WriteLine("Type your second number");
-            numberTwo = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter your second number! ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
 
-          
-
-            Console.WriteLine("\t+  Add");
-            Console.WriteLine("\t-  Subtract");
-            Console.WriteLine("\t*  Multiply");
-            Console.WriteLine("\t/  Divide");
-            Console.Write("Type your option? ");
-
-            switch (Console.ReadLine())
+            if (op == "+")
             {
-
-                case "+":
-                    Console.WriteLine($"Your result: {numberOne} + {numberTwo} = " + (numberOne + numberTwo ));
-                    break;
-
-                case "-":
-                    Console.WriteLine($"Your result: {numberOne} - {numberTwo}  = " + (numberOne - numberTwo ));
-                    break;
-
-                case "*":
-                    Console.WriteLine($"Your result: {numberOne} * {numberTwo} = " + (numberOne * numberTwo ));
-                    break;
-
-                case "/":
-                    Console.WriteLine($"Your result: {numberOne} / {numberTwo} = " + (numberOne / numberTwo ));
-                    break;
-
-
-
+                Console.WriteLine($"Your answer is {num1} + {num2} = " + (num1 + num2));
             }
 
-            Console.Write("Done");
+            else if (op == "-")
+            {
+                Console.WriteLine($"Your answer is {num1} - {num2} = " + (num1 - num2));
+            }
+
+            else if (op == "*")
+            {
+                Console.WriteLine($"Your answer is {num1} * {num2} = " + (num1 * num2));
+            }
+
+            else if (op == "/")
+            {
+                Console.WriteLine($"Your answer is {num1} / {num2} = " + (num1 * num2));
+            }
+
+            else
+            {
+                Console.WriteLine("Unknown Operator!");
+            }
+            Console.WriteLine("Press any key to quit: ");
             Console.ReadKey();
 
-
+           
 
 
 
